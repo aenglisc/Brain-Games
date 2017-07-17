@@ -1,6 +1,6 @@
 {
   "name": "brain-games-by-roman",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "hexlet-projects-project1",
   "main": "/src/bin/brain-games.js",
   "bin": {
