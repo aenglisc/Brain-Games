@@ -1,4 +1,4 @@
-import * as readlineSync from 'readline-sync';
+import readlineSync from 'readline-sync.js';
 
 export default () => {
   const playerName = readlineSync.question('\nMay I know your name? ');

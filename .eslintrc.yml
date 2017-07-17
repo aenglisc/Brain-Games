@@ -10,4 +10,3 @@ extends:
 
 rules:
   no-console: 0
-  import/no-absolute-path: 0
