@@ -1,6 +1,6 @@
 {
   "name": "brain-games-by-roman",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "hexlet-projects-project1",
   "main": "/src/bin/brain-games.js",
   "bin": {
@@ -30,5 +30,7 @@
     "babel-preset-stage-0": "*"
   },
   "homepage": "https://github.com/aenglisc/project-lvl1-s116#readme",
-  "dependencies": {}
+  "dependencies": {
+    "readline-sync": "^1.4.7"
+  }
 }
