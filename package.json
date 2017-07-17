@@ -1,10 +1,10 @@
 {
-  "name": "brain-games",
-  "version": "1.0.0",
+  "name": "brain-games-by-roman",
+  "version": "1.0.1",
   "description": "hexlet-projects-project1",
   "main": "/src/bin/brain-games.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games-by-roman": "dist/bin/brain-games.js"
   },
   "scripts": {
     "babel-node": "babel-node",
@@ -24,10 +24,11 @@
     "url": "https://github.com/aenglisc/project-lvl1-s116/issues"
   },
   "devDependencies": {
-    "babel-cli": "*",
+    "babel-cli": "^6.24.1",
     "babel-core": "*",
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*"
   },
-  "homepage": "https://github.com/aenglisc/project-lvl1-s116#readme"
+  "homepage": "https://github.com/aenglisc/project-lvl1-s116#readme",
+  "dependencies": {}
 }
