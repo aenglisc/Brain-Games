@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import readlineSync from 'readline-sync';
 
 export default () => {
