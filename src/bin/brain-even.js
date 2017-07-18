@@ -1,5 +1,5 @@
 #!/usr/local/bin/node
-import {askName, evenGameRound} from '../';
+import { askName, evenGameRound } from '../';
 
 console.log('Welcome to the Brain Games!');
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
