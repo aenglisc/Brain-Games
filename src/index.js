@@ -1,6 +1,8 @@
 // eslint-disable-next-line
 import readlineSync from 'readline-sync';
-
+/*
+import even from './even-logic';
+*/
 export const askName = () => {
   const playerName = readlineSync.question('\nMay I know your name? ');
   console.log(`Hello, ${playerName}!`);
@@ -17,7 +19,8 @@ export const evenGameRound = (playerName, round, correctAnswers) => {
   const currentNumber = getRandomInt();
   const numberIsEven = currentNumber % 2 === 0;
   const expectedAnswer = numberIsEven ? 'yes' : 'no';
-  const answer = readlineSync.question(`\nRound ${round}: Is ${currentNumber} even? `);
+  const questionText = `\nRound ${round}: Is ${currentNumber} even? `;
+  const answer = readlineSync.question(questionText);
 
   if (answer === expectedAnswer) {
     console.log('Correct!');
@@ -27,5 +30,4 @@ export const evenGameRound = (playerName, round, correctAnswers) => {
   console.log(`Sorry, "${answer}" is the wrong answer. :(`);
   console.log(`The correct answer is "${expectedAnswer}".`);
   console.log(`Let's try again, ${playerName}!`);
-  evenGameRound(playerName, round + 1, correctAnswers);
 };
