@@ -25,7 +25,7 @@ export const evenGameRound = (playerName, round, correctAnswers) => {
     return;
   }
   console.log(`Sorry, "${answer}" is the wrong answer. :(`);
-  console.log(`The correct answer is ${expectedAnswer}.`);
+  console.log(`The correct answer is "${expectedAnswer}".`);
   console.log(`Let's try again, ${playerName}!`);
   evenGameRound(playerName, round + 1, correctAnswers);
 };
