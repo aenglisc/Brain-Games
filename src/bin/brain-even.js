@@ -1,10 +1,8 @@
 #!/usr/local/bin/node
-import { askName, evenGameRound } from '../';
+import { play } from '../';
+import GameEven from '../games-logic/GameEven';
 
-console.log('Welcome to the Brain Games!');
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-console.log('Other answers will be considered incorrect.');
+const message = 'Answer "yes" if the number is even, otherwise answer "no".';
+const game = new GameEven(message);
 
-const playerName = askName();
-
-evenGameRound(playerName, 1, 0);
+play(game);

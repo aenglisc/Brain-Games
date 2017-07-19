@@ -1,5 +1,8 @@
 #!/usr/local/bin/node
-import { askName } from '../';
+import { play } from '../';
+import GameBase from '../games-logic/GameBase';
 
-console.log('Welcome to the Brain Games!');
-askName();
+const game = new GameBase();
+game.playable = false;
+
+play(game);
