@@ -31,7 +31,7 @@ const balance = (num) => {
   return recBalance(digitsArray);
 };
 
-const brainEven = () => {
+const brainBalance = () => {
   const currentNumber = getRandomInt(1, 9999);
   return {
     expectedAnswer: `${balance(currentNumber)}`,
@@ -39,4 +39,4 @@ const brainEven = () => {
   };
 };
 
-export default () => play(brainEven, desc);
+export default () => play(brainBalance, desc);
