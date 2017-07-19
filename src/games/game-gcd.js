@@ -1,12 +1,7 @@
 import play from '..';
-import getRandomInt from '../getRandomInt';
+import { getRandomInt, gcd } from '../extra-functions';
 
 const desc = 'Find the given numbers\' greatest common divisor';
-
-const gcd = (x = 0, y = 0) => {
-  if (y === 0) { return x; }
-  return gcd(y, x % y);
-};
 
 const brainGcd = () => {
   const num1 = getRandomInt();

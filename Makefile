@@ -7,6 +7,7 @@ start:
 	npm run babel-node -- src/bin/brain-calc.js
 	npm run babel-node -- src/bin/brain-gcd.js
 	npm run babel-node -- src/bin/brain-balance.js
+	npm run babel-node -- src/bin/brain-progression.js
 
 build:
 	rm -rf dist
