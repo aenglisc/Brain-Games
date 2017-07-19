@@ -1,5 +1,5 @@
 import play from '..';
-import getRandomInt from '../getRandomInt';
+import { getRandomInt } from '../extra-functions';
 
 const desc = 'What is the result of the expression?';
 

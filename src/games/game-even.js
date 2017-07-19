@@ -1,5 +1,5 @@
 import play from '..';
-import getRandomInt from '../getRandomInt';
+import { getRandomInt } from '../extra-functions';
 
 const desc = 'Answer "yes" if the number is even, otherwise answer "no".';
 
