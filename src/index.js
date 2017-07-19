@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 const BR = '\n';
 
 export default (game, description) => {
-  console.log('Welcome to the Brain Games!');
+  console.log(`${BR}Welcome to the Brain Games!`);
   if (description) { console.log(description); }
   const playerName = readlineSync.question(`${BR}May I know your name? `);
   console.log(`Hello, ${playerName}!`);
