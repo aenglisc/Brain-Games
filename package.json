@@ -38,8 +38,7 @@
     "babel-cli": "^6.24.1",
     "babel-core": "*",
     "babel-preset-env": "*",
-    "babel-preset-stage-0": "*",
-    "es6-weak-map": "^2.0.2"
+    "babel-preset-stage-0": "*"
   },
   "homepage": "https://github.com/aenglisc/project-lvl1-s116#readme",
   "dependencies": {
