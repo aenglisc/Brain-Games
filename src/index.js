@@ -6,6 +6,7 @@ const BR = '\n';
 export default (game, description) => {
   console.log(`${BR}Welcome to the Brain Games!`);
   if (description) { console.log(description); }
+
   const playerName = readlineSync.question(`${BR}May I know your name? `);
   console.log(`Hello, ${playerName}!`);
 
@@ -17,6 +18,7 @@ export default (game, description) => {
       const { expectedAnswer, questionString } = game();
       const question = `${BR}Round ${round}: ${questionString}`;
       const answer = readlineSync.question(question);
+
       if (answer === expectedAnswer) {
         console.log('Correct!');
         playRound(round + 1);
@@ -27,5 +29,6 @@ export default (game, description) => {
       }
     }
   };
+
   if (game) { playRound(1); }
 };
