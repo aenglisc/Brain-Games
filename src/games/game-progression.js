@@ -11,6 +11,7 @@ const brainProg = () => {
   const expectedAnswer = arrayFromProg[elementToHide];
   const question = arrayFromProg.map(item =>
       (item === expectedAnswer ? '..' : item)).join(' ');
+
   return {
     expectedAnswer: `${expectedAnswer}`,
     questionString: `${question}${BR}`,
