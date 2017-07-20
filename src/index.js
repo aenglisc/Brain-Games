@@ -7,10 +7,10 @@ export default (game, description) => {
 
   const playerName = readlineSync.question('\nMay I know your name? ');
   console.log(`Hello, ${playerName}!`);
+  const answersToWin = 3;
 
   const playRound = (round) => {
-    const correctAnswers = round - 1;
-    if (correctAnswers === 3) {
+    if (round - 1 === answersToWin) {
       console.log(`\nCongratulations, ${playerName}!\n`);
     } else {
       const { expectedAnswer, questionString } = game();
