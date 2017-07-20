@@ -7,7 +7,7 @@ export const gcd = (x = 0, y = 0) => {
   return gcd(y, x % y);
 };
 
-export const numberToArrayOfDigits = (num) => {
+export const numberToSortedArrayOfDigits = (num) => {
   const stringFromNum = num.toString();
   const sortedArrayFromString = stringFromNum.split('').sort();
   const arrayOfDigitsFromArray = sortedArrayFromString.map(item => Number(item));
@@ -15,21 +15,20 @@ export const numberToArrayOfDigits = (num) => {
 };
 
 export const balance = (num) => {
-  const digitsArray = numberToArrayOfDigits(num);
+  const digitsArray = numberToSortedArrayOfDigits(num);
 
   const recBalance = (array) => {
-    const balanced = array.reduce((acc, item, index) => {
+    const newArray = array.reduce((acc, item, index) => {
       const nextItem = array[index + 1];
       if (nextItem && (nextItem - item >= 2)) {
-        /*eslint-disable*/
-        array[index] += 1;
-        array[index + 1] -= 1;
-        /*eslint-enable*/
-        return false;
+        acc.arr[index] += 1;
+        acc.arr[index + 1] -= 1;
+        acc.isBalanced = false;
+        return acc;
       }
       return acc;
-    }, true);
-    if (balanced) { return array.join(''); }
+    }, { arr: array, isBalanced: true });
+    if (newArray.isBalanced) { return newArray.arr.join(''); }
     return recBalance(array);
   };
   return recBalance(digitsArray);
@@ -49,6 +48,7 @@ export const genArithProg = () => {
   return iterGen('', base, length);
 };
 /*
+DEPRECATED
 const primesBeforeHundred = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
   31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 
