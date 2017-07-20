@@ -42,6 +42,7 @@
   },
   "homepage": "https://github.com/aenglisc/project-lvl1-s116#readme",
   "dependencies": {
+    "es6-weak-map": "^2.0.2",
     "readline-sync": "^1.4.7"
   }
 }
