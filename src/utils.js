@@ -40,14 +40,15 @@ export const genArithProg = () => {
   const increment = getRandomInt(1, 10);
   const length = getRandomInt(5, 10);
 
-  const iterGen = (array, element, progLength) => {
-    if (progLength === 0) { return array.join(' '); }
-    array.push(element);
-    return iterGen(array, element + increment, progLength - 1);
+  const iterGen = (str, element, acc) => {
+    if (acc === 0) { return str; }
+    return iterGen(acc === 1 ? `${str}${element}`
+                             : `${str}${element} `,
+                             element + increment, acc - 1);
   };
-  return iterGen([], base, length);
+  return iterGen('', base, length);
 };
-
+/*
 const primesBeforeHundred = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
   31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 
@@ -57,4 +58,16 @@ export const isPrime = (num) => {
   if (num < 100 && primesSet.has(num)) { return true; }
   return primesBeforeHundred.reduce((acc, item) =>
     (num > item && num % item === 0 ? false : acc), true);
+};
+*/
+export const isPrime = (num) => {
+  const sqrtNum = Math.sqrt(num);
+  if (num <= 1) { return false; }
+  if (num % 2 === 0) { return false; }
+  const iterCheck = (div) => {
+    if (div > sqrtNum) { return true; }
+    if (num % div === 0) { return false; }
+    return iterCheck(div + 2);
+  };
+  return iterCheck(3);
 };

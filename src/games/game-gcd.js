@@ -1,5 +1,5 @@
 import play from '..';
-import { getRandomInt, gcd } from '../extra-functions';
+import { getRandomInt, gcd } from '../utils';
 
 const desc = 'Find the given numbers\' greatest common divisor';
 

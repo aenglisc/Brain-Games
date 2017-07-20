@@ -1,5 +1,5 @@
 import play from '..';
-import { getRandomInt, isPrime } from '../extra-functions';
+import { getRandomInt, isPrime } from '../utils';
 
 const desc = 'Is the number a prime?';
 

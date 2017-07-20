@@ -1,5 +1,5 @@
 import play from '..';
-import { getRandomInt, balance } from '../extra-functions';
+import { getRandomInt, balance } from '../utils';
 
 const desc = 'Balance the given number.';
 

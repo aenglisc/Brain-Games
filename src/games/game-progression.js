@@ -1,8 +1,7 @@
 import play from '..';
-import { getRandomInt, genArithProg } from '../extra-functions';
+import { getRandomInt, genArithProg } from '../utils';
 
 const desc = 'What number is this progression missing?';
-const BR = '\n';
 
 const brainProg = () => {
   const prog = genArithProg();
@@ -14,7 +13,7 @@ const brainProg = () => {
 
   return {
     expectedAnswer: `${expectedAnswer}`,
-    questionString: `${question}${BR}`,
+    questionString: `${question}\n`,
   };
 };
 
