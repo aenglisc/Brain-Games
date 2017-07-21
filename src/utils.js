@@ -16,7 +16,6 @@ export const numberToSortedArrayOfDigits = (num) => {
 
 export const balance = (num) => {
   const digitsArray = numberToSortedArrayOfDigits(num);
-
   const recBalance = (array) => {
     const newArray = array.reduce((acc, item, index) => {
       const nextItem = array[index + 1];
@@ -29,7 +28,7 @@ export const balance = (num) => {
       return acc;
     }, { arr: array, isBalanced: true });
     if (newArray.isBalanced) { return newArray.arr.join(''); }
-    return recBalance(array);
+    return recBalance(newArray.arr);
   };
   return recBalance(digitsArray);
 };
