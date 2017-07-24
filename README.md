@@ -8,8 +8,8 @@ Installation: npm i -g brain-games-by-roman
 
 <table style="width:100%">
   <tr>
-    <th>Game binary</th>
-    <th>Description</th> 
+    <th>Game executable</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td>brain-games-by-roman-balance</td>
