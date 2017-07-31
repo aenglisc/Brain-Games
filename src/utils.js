@@ -17,7 +17,8 @@ export const numberToSortedArrayOfDigits = (num) => {
   return arrayOfDigitsFromArray;
 };
 
-// returns a balanced number (every next digit is equal to or greater by 1 than the previous)
+// returns a balanced number
+// every next digit is greater by one or equal to the previous
 export const balance = (num) => {
   const digitsArray = numberToSortedArrayOfDigits(num);
   const recBalance = (array) => {
@@ -37,7 +38,7 @@ export const balance = (num) => {
   return recBalance(digitsArray);
 };
 
-// generates a string representing an arithmetic progression
+// generates an arithmetic progression in the form of a string
 export const genArithProg = () => {
   const base = getRandomInt(1, 100);
   const increment = getRandomInt(1, 10);
@@ -45,8 +46,7 @@ export const genArithProg = () => {
   const iterGen = (str, element, acc) => {
     if (acc === 0) { return str; }
     return iterGen(acc === 1 ? `${str}${element}`
-                             : `${str}${element} `,
-                             element + increment, acc - 1);
+      : `${str}${element} `, element + increment, acc - 1);
   };
   return iterGen('', base, length);
 };
