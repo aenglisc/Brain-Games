@@ -9,7 +9,7 @@ const brainProg = () => {
   const elementToHide = getRandomInt(0, arrayFromProg.length - 1);
   const expectedAnswer = arrayFromProg[elementToHide];
   const question = arrayFromProg.map(item =>
-      (item === expectedAnswer ? '..' : item)).join(' ');
+    (item === expectedAnswer ? '..' : item)).join(' ');
 
   return {
     expectedAnswer: `${expectedAnswer}`,
