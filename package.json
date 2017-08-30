@@ -2,7 +2,7 @@
   "name": "brain-games-by-roman",
   "version": "3.4.2",
   "description": "hexlet-projects-project1",
-  "main": "/src/bin/brain-games.js",
+  "main": "/src/index.js",
   "bin": {
     "brain-games-by-roman": "dist/bin/brain-games.js",
     "brain-games-by-roman-even": "dist/bin/brain-even.js",
