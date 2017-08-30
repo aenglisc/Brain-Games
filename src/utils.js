@@ -53,8 +53,11 @@ export const genArithProg = () => {
 
 // checks for primality
 export const isPrime = (num) => {
+  if (num === 2) { return true; }
+
   const sqrtNum = Math.sqrt(num);
   if (num <= 1 || num % 2 === 0) { return false; }
+
   const iterCheck = (div) => {
     if (div > sqrtNum) { return true; }
     if (num % div === 0) { return false; }

@@ -1,6 +1,6 @@
-# project-lvl1-s116
+# Brain Games
 
-<a href="https://codeclimate.com/github/aenglisc/project-lvl1-s116"><img src="https://codeclimate.com/github/aenglisc/project-lvl1-s116/badges/gpa.svg" /></a> <a href="https://codeclimate.com/github/aenglisc/project-lvl1-s116"><img src="https://codeclimate.com/github/aenglisc/project-lvl1-s116/badges/issue_count.svg" /></a> <img src="https://travis-ci.org/aenglisc/project-lvl1-s116.svg?branch=master" />
+<a href="https://codeclimate.com/github/aenglisc/Brain-Games"><img src="https://codeclimate.com/github/aenglisc/Brain-Games/badges/gpa.svg" /></a> <a href="https://codeclimate.com/github/aenglisc/Brain-Games"><img src="https://codeclimate.com/github/aenglisc/Brain-Games/badges/issue_count.svg" /></a> <img src="https://travis-ci.org/aenglisc/Brain-Games.svg?branch=master" />
 
 This is a series of simple mathematical games.
 
