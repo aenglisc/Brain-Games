@@ -27,7 +27,7 @@ export default (game, description) => {
         playRound(round + 1);
       } else {
         // defeat
-        console.log(`Sorry, "${answer}" is the wrong answer. :(`);
+        console.log(`Sorry, "${answer}" is wrong. :(`);
         console.log(`The correct answer is "${expectedAnswer}".`);
         console.log(`\nLet's try again, ${playerName}!\n`);
       }
